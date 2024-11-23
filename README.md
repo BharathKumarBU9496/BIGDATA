@@ -73,12 +73,45 @@ docker exec -it myhadoop bash
 ```
 ### **:earth_americas: Accessing Web Interfaces**
 Hadoop Web Interface: http://localhost:50070
+
 Spark Web Interface: http://localhost:8080
 
 ### **:memo: Update and Install Tools in Ubuntu**
-Update Ubuntu:
+1. Update Ubuntu:
 
 ```bash
 
 apt update
+```
+2. Install nano editor:
+
+```bash
+
+apt install nano
+```
+3. Verify Hadoop Installation:
+
+```bash
+
+ls /usr/local/hadoop
+```
+### **:gear: Set Up Environment Variables**
+1. Open your ~/.bashrc for editing:
+
+```bash
+
+nano ~/.bashrc
+```
+2. Add the following lines to set up environment variables:
+
+```bash
+export HADOOP_HOME=/usr/local/hadoop
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+
+3. Reload the ~/.bashrc settings:
+
+```bash
+
+source ~/.bashrc
 ```
