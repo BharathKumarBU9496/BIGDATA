@@ -455,6 +455,9 @@ Add this:
     <value>yarn</value>
   </property>
 </configuration>"
+
+        sys.stderr.write("Skipping invalid score: {0}\n".format(line))
+        continue
 Save and exit.
 
 # yarn-site.xml
