@@ -108,10 +108,41 @@ nano ~/.bashrc
 export HADOOP_HOME=/usr/local/hadoop
 export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
-
+```
 3. Reload the ~/.bashrc settings:
 
 ```bash
 
 source ~/.bashrc
+```
+
+# Note: If Hadoop stops working for any reason, restart it using:
+```bash
+stop-dfs.sh
+stop-yarn.sh
+start-dfs.sh
+start-yarn.sh
+```
+Navigate to the home directory and continue with your Hadoop tasks:
+
+```bash
+cd home
+```
+
+### **:file_folder: Data Handling in Hadoop**
+1. Create a new directory:
+
+```bash
+mkdir datasrc
+```
+
+2. Upload the dataset to HDFS:
+
+```bash
+hadoop fs -mkdir -p /home/datasrc/bigDataTask
+hadoop fs -put Books_rating.csv /home/datasrc/bigDataTask
+```
+3. Verify the file upload:
+```bash
+hadoop fs -ls /home/datasrc/bigDataTask
 ```
