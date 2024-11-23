@@ -15,7 +15,11 @@ docker pull suhothayan/hadoop-spark-pig-hive:2.9.2
 🚀 Execute this Docker command in the same window where you have pulled the image:
 
 docker run -it --name myhadoop -p 9000:9000 -p 2122:2122 -p 50070:50070 -p 50010:50010 -p 50075:50075 -p 50020:50020 -p 50090:50090 -p 8088:8088 -p 8030:8030 -p 8031:8031 -p 8032:8032 -p 8033:8033 -p 8040:8040 -p 8042:8042 -p 8080:8080 -p 8081:8081 -p 10000:10000 -p 9083:9083 suhothayan/hadoop-spark-pig-hive:2.9.2 bash
-Troubleshooting
+
+        sys.stderr.write("Skipping invalid score: {0}\n".format(line))
+        continue
+        
+# Troubleshooting
 
 Error: ...Ports are not available on Windows
 
@@ -25,10 +29,14 @@ Error: The container name "/myhadoop" is already in use
 
 Fix: Remove the container using Docker Desktop and re-run the docker run... command.
 
-Mac (Apple Chip M1, M2, M3) Users: Open a Terminal and pull the image:
+# Mac (Apple Chip M1, M2, M3) Users: Open a Terminal and pull the image:
 
 docker pull bugbond/hadoop-spark-pig-hive-arm64
-Run the services:
+
+        sys.stderr.write("Skipping invalid score: {0}\n".format(line))
+        continue
+        
+#Run the services:
 
 docker run -it --name bigtools -p 9000:9000 -p 2122:2122 -p 50070:50070 -p 50010:50010 -p 50075:50075 -p 50020:50020 -p 50090:50090 -p 8088:8088 -p 8030:8030 -p 8031:8031 -p 8032:8032 -p 8033:8033 -p 8040:8040 -p 8042:8042 -p 8080:8080 -p 8081:8081 -p 10000:10000 -p 9083:9083 bugbond/hadoop-spark-pig-hive-arm64:latest bash
 Wait for few minutes until the prompt changes to something like this:
