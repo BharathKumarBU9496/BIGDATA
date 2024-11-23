@@ -461,7 +461,7 @@ Save and exit.
 Open this file:
 sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml
 Add the following:
-#<configuration>
+#!<configuration>
   <property>
     <name>yarn.nodemanager.aux-services</name>
     <value>mapreduce_shuffle</value>
