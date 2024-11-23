@@ -1,6 +1,16 @@
 # BIGDATA
 Complete setup of Big data
 
+### Restarting Hadoop Services
+
+If, for any reason, Hadoop stops working, use the following commands to restart it:
+
+```bash
+stop-dfs.sh
+stop-yarn.sh
+start-dfs.sh
+start-yarn.sh
+
 
 Hadoop Installation
 Open Docker and make sure the Docker Engine is running
