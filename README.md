@@ -44,6 +44,7 @@ Error: Ports are not available on Windows
 Fix: Open a Terminal (must be run as administrator) and execute:
 ```bash
 net stop winnat
+
 Error: The container name "/myhadoop" is already in use
 Fix: Remove the container using Docker Desktop and re-run the docker run command.
 
