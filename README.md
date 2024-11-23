@@ -462,6 +462,7 @@ Open this file:
 sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml
 Add the following:
 #!/usr/bin/env python
+bash
 <configuration>
   <property>
     <name>yarn.nodemanager.aux-services</name>
