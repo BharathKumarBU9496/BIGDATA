@@ -63,3 +63,22 @@ Fix: Remove the container using Docker Desktop and re-run the docker run command
 10. 8080: Spark Master Web UI
 11. 8081: Spark Worker Web UI
 12. 10000: HiveServer2
+
+### **:repeat: Re-run Existing Container**
+To access your previous work in an existing Hadoop container, use:
+
+```bash
+
+docker exec -it myhadoop bash
+```
+### **:earth_americas: Accessing Web Interfaces**
+Hadoop Web Interface: http://localhost:50070
+Spark Web Interface: http://localhost:8080
+
+### **:memo: Update and Install Tools in Ubuntu**
+Update Ubuntu:
+
+```bash
+
+apt update
+```
