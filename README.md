@@ -449,14 +449,15 @@ mapred-site.xml
 Open the file:
 sudo nano $HADOOP_HOME/etc/hadoop/mapred-site.xml
 Add this:
-<configuration>
+" <configuration>
   <property>
     <name>mapreduce.framework.name</name>
     <value>yarn</value>
   </property>
-</configuration>
+</configuration>"
 Save and exit.
-yarn-site.xml
+
+# yarn-site.xml
 Open this file:
 sudo nano $HADOOP_HOME/etc/hadoop/yarn-site.xml
 Add the following:
@@ -475,7 +476,8 @@ Add the following:
   </property>
 </configuration>
 Save and exit.
-Starting Hadoop Services
+
+# Starting Hadoop Services
 Format HDFS NamdeNode
 hdfs namenode -format
 Start Hadoop services:
@@ -493,9 +495,11 @@ hadoop fs -put simulation_data.csv /fbi-simulation
 Check the Hadoop file system (HDFS):
 hadoop fs -ls /fbi-simulation
 Explore and analyze the data as needed!
-Access Hadoop Web Interface
+
+# Access Hadoop Web Interface
 NameNode Web UI (for HDFS status): Open http://localhost:9870 in your web browser.
 ResourceManager Web UI (for YARN status): Open http://localhost:8088.
-Stopping Hadoop Services
+
+# Stopping Hadoop Services
 Stop all Hadoop services:
 stop-all.sh
