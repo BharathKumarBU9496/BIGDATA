@@ -49,4 +49,16 @@ Error: The container name "/myhadoop" is already in use
 Fix: Remove the container using Docker Desktop and re-run the docker run command.
 
 
-
+### **:book: Port Number Explained**
+1. 2122: SSH
+2. 50070: HDFS NameNode
+3. 50010: HDFS DataNode
+4. 50075: HDFS DataNode
+5. 50020: SecondaryNameNode
+6. 50090: HDFS DataNode Secure
+7. 8088: YARN ResourceManager
+8. 8030, 8031, 8032, 8033: YARN ResourceManager Scheduler
+9. 8040, 8042: YARN NodeManager
+10. 8080: Spark Master Web UI
+11. 8081: Spark Worker Web UI
+12. 10000: HiveServer2
