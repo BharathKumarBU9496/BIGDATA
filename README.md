@@ -19,6 +19,7 @@ docker run -it --name myhadoop -p 9000:9000 -p 2122:2122 -p 50070:50070 -p 50010
 ./stop-application.sh
 
 
+
        
 
  Troubleshooting
