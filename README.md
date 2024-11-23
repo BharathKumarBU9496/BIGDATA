@@ -18,7 +18,6 @@ docker pull suhothayan/hadoop-spark-pig-hive:2.9.2
 
        
 
-**Note:**
  Troubleshooting
 
 Error: ...Ports are not available on Windows
