@@ -23,6 +23,8 @@ Ensure Docker Engine is running.
 ```bash
 docker pull suhothayan/hadoop-spark-pig-hive:2.9.2
 
+
+
 **⚠️ Note: If the download freezes, cancel it with Ctrl + C, switch your network, and try again.**
 
 3. Run the Docker Image:
