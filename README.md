@@ -33,3 +33,4 @@ Execute this Docker command in the same window where you have pulled the image:
 Open a Terminal and pull the image:
 
 docker pull bugbond/hadoop-spark-pig-hive-arm64
+
