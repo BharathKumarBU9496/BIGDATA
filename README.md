@@ -1,4 +1,4 @@
-# Hadoop Installation
+# Hadoop Installation.
 1. Open Docker and make sure the Docker Engine is running
 
 2. Windows Users: Open a Command Prompt and pull the image:
