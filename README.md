@@ -74,7 +74,7 @@ root@b5dc483f5c73:/#
 
 10000:10000 \ # HiveServer2
 
-Note: Use the below command if you exit Hadoop container and wanna re-run the created container and get access to your previous work:
+### **Note: Use the below command if you exit Hadoop container and wanna re-run the created container and get access to your previous work:**
 ```bash
 docker exec -it myhadoop bash
 ```
